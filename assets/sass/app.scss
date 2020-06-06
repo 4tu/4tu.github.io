@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+    background-image: url('/image/pattern.png');
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.app-area {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

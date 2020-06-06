@@ -1,0 +1,13 @@
+// Reset
+@import '~/assets/sass/normalize.css';
+
+// Variables
+@import 'variables';
+
+// Layout & Components
+@import 'app';
+@import 'header';
+@import 'footer';
+
+// Pages
+@import 'index';
