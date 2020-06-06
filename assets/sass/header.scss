@@ -1,0 +1,75 @@
+.header-area {
+    background-color: white;
+    @media (min-width: 769px) {
+        background-image: url('/image/header-bg.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+    padding: 10px;
+    border-bottom: 2px solid;
+    text-align: center;
+
+    .logo-area {
+        @media (min-width: 769px) {
+            display: block;
+            text-align: left;
+            width: 400px;
+            height: 50px;
+        }
+        @media (max-width: 768px) {
+            display: inline-block;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 800;
+            padding-top: 20px;
+            text-decoration: none;
+            color: $black;
+
+            .red {
+                color: $red;
+            }
+        }
+    }
+
+    .nav-area {
+        @media (min-width: 769px) {
+            display: block;
+            text-align: left;
+            width: 400px;
+            height: 40px;
+        }
+        @media (max-width: 768px) {
+            display: inline-block;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            font-size: large;
+            font-weight: 700;
+            text-align: left;
+            @media (min-width: 769px) {
+                background-image: url('/image/uncheck.png');
+                background-repeat: no-repeat;
+            }
+            width: 100px;
+
+            .text {
+                @media (min-width: 769px) {
+                    padding-left: 20px;
+                }
+                text-decoration: none;
+                color: $black;
+            }
+
+            &:hover {
+                @media (min-width: 769px) {
+                    background-image: url('/image/check.png');
+                }
+            }
+        }
+    }
+}
