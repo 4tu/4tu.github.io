@@ -2,10 +2,56 @@ html, body {
     height: 100%;
     background-image: url('/image/pattern.png');
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+a {
+    color: $blue2;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue;
+    }
 }
 
 .app-area {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    .container {
+        display: block;
+        margin: 20px;
+        background-color: rgba($black, $alpha: 0.05);
+        border-radius: 10px;
+
+        .main-section {
+            margin: 20px;
+
+            .main-header {
+                margin: 20px 0;
+                font-size: x-large;
+                font-weight: 500;
+                border-bottom: 2px solid $gray;
+                color: $black;
+
+                .red {
+                    color: $red;
+                }
+            }
+
+            .contents {
+                font-size: medium;
+                font-weight: 400;
+            }
+
+            .sub-section {
+                .sub-header {
+                    font-size: larger;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }

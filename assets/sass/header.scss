@@ -7,7 +7,7 @@
         height: 140px;
         padding: 10px;
     }
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     text-align: center;
 
     .logo-area {
@@ -19,6 +19,7 @@
         }
         @media (max-width: 768px) {
             display: inline-block;
+            width: 100%;
         }
 
         .title {
@@ -27,6 +28,9 @@
             padding-top: 20px;
             text-decoration: none;
             color: $black;
+            @media (max-width: 768px) {
+                font-size: xx-large;
+            }
 
             .red {
                 color: $red;
@@ -48,26 +52,20 @@
         .button {
             display: inline-block;
             margin: 10px;
-            font-size: large;
-            font-weight: 700;
+            width: 100px;
             @media (min-width: 769px) {
-                background-image: url('/image/uncheck.png');
-                background-repeat: no-repeat;
                 text-align: left;
             }
-            width: 100px;
 
             .text {
-                @media (min-width: 769px) {
-                    padding-left: 20px;
-                }
-                text-decoration: none;
+                font-size: large;
+                font-weight: 700;
                 color: $black;
-            }
 
-            &:hover {
                 @media (min-width: 769px) {
-                    background-image: url('/image/check.png');
+                    &:hover {
+                        color: $red;
+                    }
                 }
             }
         }

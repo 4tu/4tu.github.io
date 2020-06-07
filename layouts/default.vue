@@ -1,21 +1,21 @@
 <template>
-  <div class="app-area">
-    <Header />
-    <section class="section main-content">
-      <nuxt />
-    </section>
-    <Footer />
-  </div>
+    <div class="app-area">
+        <Header />
+        <div class="container">
+            <nuxt />
+        </div>
+        <Footer />
+    </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
+import Header from '@/components/header.vue';
+import Footer from '@/components/footer.vue';
 
 export default {
-  components: {
-    Header,
-    Footer,
-  },
+    components: {
+        Header,
+        Footer,
+    },
 }
 </script>
