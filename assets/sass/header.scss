@@ -5,8 +5,8 @@
         background-position: right;
         background-repeat: no-repeat;
         height: 140px;
+        padding: 10px;
     }
-    padding: 10px;
     border-bottom: 2px solid;
     text-align: center;
 
@@ -50,10 +50,10 @@
             margin: 10px;
             font-size: large;
             font-weight: 700;
-            text-align: left;
             @media (min-width: 769px) {
                 background-image: url('/image/uncheck.png');
                 background-repeat: no-repeat;
+                text-align: left;
             }
             width: 100px;
 
