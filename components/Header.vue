@@ -8,7 +8,7 @@
         <nav class="nav-area">
             <div id="navbutton">
                 <div class="button" v-for="link in links" :key="link.index">
-                    <a :href='"/"+link'><i class="far fa-check-circle"></i> {{ link }}</a>
+                    <a class="text" :href='"/"+link'><i class="far fa-check-circle"></i> {{ link }}</a>
                 </div>
             </div>
         </nav>

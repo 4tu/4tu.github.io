@@ -35,21 +35,29 @@ a {
                 font-weight: 500;
                 border-bottom: 2px solid $gray;
                 color: $black;
+                @media (max-width: 768px) {
+                    font-size: larger;
+                    font-weight: 700;
+                }
 
                 .red {
                     color: $red;
                 }
             }
 
-            .contents {
-                font-size: medium;
-                font-weight: 400;
-            }
-
             .sub-section {
                 .sub-header {
                     font-size: larger;
                     font-weight: 500;
+                    @media (max-width: 768px) {
+                        font-size: large;
+                        font-weight: 700;
+                    }
+                }
+
+                .contents {
+                    font-size: medium;
+                    font-weight: 400;
                 }
             }
         }

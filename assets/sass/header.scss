@@ -58,10 +58,7 @@
             }
 
             .text {
-                font-size: large;
-                font-weight: 700;
                 color: $black;
-
                 @media (min-width: 769px) {
                     &:hover {
                         color: $red;
