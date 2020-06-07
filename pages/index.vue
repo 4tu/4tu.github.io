@@ -1,7 +1,7 @@
 <template>
     <div class="main-section">
         <div class="main-header">
-            https://4tu.github.io/<span class="red">{{ uri }}</span>
+            https://4tu.github.io/<span class="red">{{ path }}</span>
         </div>
         <div class="sub-section">
             <div class="sub-header">
@@ -41,7 +41,7 @@ export default {
     name: 'index',
     data() {
         return{
-            uri: '',
+            path: '',
             links: ['about', 'stack', 'contact'],
             todos: [
                 'セクションをコンポーネントで分ける',
