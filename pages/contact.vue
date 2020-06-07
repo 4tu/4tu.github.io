@@ -11,7 +11,7 @@ export default {
     name: 'contact',
     data() {
         return{
-            uri: 'Contact',
+            uri: 'contact',
         }
     }
 }

@@ -11,7 +11,7 @@ export default {
     name: 'stack',
     data() {
         return{
-            uri: 'Stack',
+            uri: 'stack',
         }
     }
 }

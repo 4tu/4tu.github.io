@@ -11,7 +11,7 @@ export default {
     name: 'about',
     data() {
         return{
-            uri: 'About',
+            uri: 'about',
         }
     }
 }
