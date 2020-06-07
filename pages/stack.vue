@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'Stack',
+    name: 'stack',
     data() {
         return{
             uri: 'Stack',
