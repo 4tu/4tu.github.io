@@ -42,7 +42,7 @@ export default {
     data() {
         return{
             uri: '',
-            links: ['About', 'Stack', 'Contact'],
+            links: ['about', 'stack', 'contact'],
             todos: [
                 'セクションをコンポーネントで分ける',
                 'ほかの画面を作る',
