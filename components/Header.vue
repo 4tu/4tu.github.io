@@ -21,7 +21,7 @@ export default {
     data() {
         return{
             path: '',
-            links: ['About', 'Stack', 'Contact'],
+            links: ['about', 'stack', 'contact'],
         }
     }
 }
