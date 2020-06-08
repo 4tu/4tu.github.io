@@ -1,47 +1,50 @@
 <template>
-    <div class="main-section">
-        <div class="main-header">
-            https://4tu.github.io/<span class="red">{{ path }}</span>
-        </div>
-        <div class="sub-section">
-            <div class="sub-header">
-                <i class="fas fa-angle-right"></i> Abstract
-            </div>
-            <p>hello</p>
-        </div>
-        <div class="sub-section">
-            <div class="sub-header">
-                <i class="fas fa-angle-right"></i> Index
-            </div>
-            <div class="contents">
-                <ul>
-                    <li class="item" v-for="link in links" :key="link.index">
-                        <a class="text" :href="'/' + link">{{ link }}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="sub-section">
-            <div class="sub-header">
-                <i class="fas fa-angle-right"></i> ToDo
-            </div>
-            <div class="contents">
-                <ul>
-                    <li class="item" v-for="todo in todos" :key="todo.name">
-                        {{ todo }}
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <MainSection>
+        <template v-slot:subsections>
+            <!-- section: abstract -->
+            <SubSection value="Abstract">
+                <template v-slot:contents>
+                    <p>hello</p>
+                </template>
+            </SubSection>
+
+            <!-- section: index -->
+            <SubSection value="Index">
+                <template v-slot:contents>
+                    <ul>
+                        <li class="item" v-for="link in links" :key="link.index">
+                            <a class="text" :href="'/' + link">{{ link }}</a>
+                        </li>
+                    </ul>
+                </template>
+            </SubSection>
+
+            <!-- section: todo -->
+            <SubSection value="Todo">
+                <template v-slot:contents>
+                    <ul>
+                        <li class="item" v-for="todo in todos" :key="todo.name">
+                            {{ todo }}
+                        </li>
+                    </ul>
+                </template>
+            </SubSection>
+        </template>
+    </MainSection>
 </template>
 
 <script>
+import MainSection from '@/components/MainSection.vue'
+import SubSection from '@/components/SubSection.vue'
+
 export default {
     name: 'index',
+    components: {
+        MainSection,
+        SubSection,
+    },
     data() {
         return{
-            path: '',
             links: ['about', 'stack', 'contact'],
             todos: [
                 'セクションをコンポーネントで分ける',

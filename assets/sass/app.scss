@@ -23,7 +23,7 @@ a {
     .container {
         display: block;
         margin: 20px;
-        background-color: rgba($black, $alpha: 0.05);
+        background-color: $contents-bg;
         border-radius: 10px;
 
         .main-section {
