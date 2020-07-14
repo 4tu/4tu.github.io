@@ -1,7 +1,7 @@
 <template>
-    <div class="sub-section">
-        <div class="sub-header">
-            <i class="fas fa-angle-right"></i> {{ value }}
+    <div class="sub-sub-section">
+        <div class="sub-sub-header">
+            <i class="fas fa-long-arrow-alt-right"></i> {{ value }}
         </div>
         <div class="contents">
             <slot name="contents"></slot>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: "SubSection",
+    name: "SubSubSection",
     props: {
         value: String,
     }

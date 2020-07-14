@@ -59,6 +59,24 @@ a {
                     font-size: medium;
                     font-weight: 400;
                 }
+
+                .sub-sub-section {
+                    margin: 20px 0;
+
+                    .sub-sub-header {
+                        font-size: larger;
+                        font-weight: 500;
+                        @media (max-width: 768px) {
+                            font-size: large;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .contents {
+                        font-size: medium;
+                        font-weight: 400;
+                    }
+                }
             }
         }
     }

@@ -36,16 +36,6 @@
                     </ul>
                 </template>
             </SubSection>
-
-            <!-- section: account -->
-            <SubSection value="Account">
-                <template v-slot:contents>
-                    <ul>
-                        <li><a href="https://twitter.com/yakiniku_now"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="https://github.com/4tu"><i class="fab fa-github"></i> GitHub</a></li>
-                    </ul>
-                </template>
-            </SubSection>
         </template>
     </MainSection>
 </template>
